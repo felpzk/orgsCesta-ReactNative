@@ -2,6 +2,7 @@ import { StyleSheet, View } from 'react-native'
 
 import Topo from './Components/Topo'
 import Detalhes from './Components/Detalhes'
+import Itens from './Components/Itens'
 
 export function Cesta({ topo, detalhes}) {
   return (
@@ -9,6 +10,7 @@ export function Cesta({ topo, detalhes}) {
       <Topo {...topo}/>
       <View style={estilos.cesta}>
         <Detalhes {...detalhes}/>
+        <Itens />
       </View>
     </>
   )
